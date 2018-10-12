@@ -1,0 +1,33 @@
+/* Code tidied up by ScrapBook */
+a { color: rgb(70, 70, 70); text-decoration: none; outline-style: none; }
+body { color: rgb(70, 70, 70); background-color: rgb(245, 245, 245); }
+body { font: 14px/22px Arial,"Microsoft YaHei"; }
+button { font: 14px/22px Arial,"Microsoft YaHei"; }
+input { font: 14px/22px Arial,"Microsoft YaHei"; }
+html { margin: 0px; padding: 0px; width: 100%; }
+body { margin: 0px; padding: 0px; width: 100%; }
+input { border: medium none; }
+select { border: medium none; }
+section { list-style: outside none none; margin: 0px; padding: 0px; font-style: normal; font-weight: normal; }
+footer { list-style: outside none none; margin: 0px; padding: 0px; font-style: normal; font-weight: normal; }
+p { list-style: outside none none; margin: 0px; padding: 0px; font-style: normal; font-weight: normal; }
+span { list-style: outside none none; margin: 0px; padding: 0px; font-style: normal; font-weight: normal; }
+input { list-style: outside none none; margin: 0px; padding: 0px; font-style: normal; font-weight: normal; }
+.block { display: block; }
+footer { display: block; }
+section { display: block; }
+.c_txt { text-align: center; }
+.i_pri { color: rgb(190, 12, 12); font-size: 18px; }
+.orange_bg { background-color: rgb(255, 80, 0) !important; }
+.rel { position: relative; }
+.item_sec { padding: 10px; line-height: 30px; }
+.item_wrap { background: rgb(250, 250, 250) none repeat scroll 0% 0%; padding: 10px; border-radius: 5px; overflow: hidden; box-shadow: 0px 1px 2px 2px rgb(228, 228, 228); }
+.i_pri { font-size: 14px; }
+.row { padding: 5px 10px 5px 70px; position: relative; }
+.row > label { left: 0px; position: absolute; }
+.add { background: rgb(245, 245, 245) none repeat scroll 0% 0%; }
+.select { border: 1px solid rgb(217, 217, 217); width: 100%; height: 30px; line-height: 30px; text-indent: 6px; font-size: 14px; vertical-align: middle; }
+.input { border: 1px solid rgb(217, 217, 217); width: 100%; height: 30px; line-height: 30px; text-indent: 6px; font-size: 14px; vertical-align: middle; }
+.select { width: 30%; margin-right: 5px; }
+footer { padding: 5px 10px; }
+#buy_now { border-radius: 4px; border: 0px none; width: 100%; color: rgb(255, 255, 255); line-height: 40px; font-size: 16px; box-shadow: 0px -1px 0px 0px rgb(215, 67, 0) inset; }
