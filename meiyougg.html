@@ -25,10 +25,20 @@
 <body class="share-body share-body1">
     <div class="top">
         <div class="top-fix">
-                <span class="top-title">话题来自<a class="leade" href="weixin//">赵丽颖</a></span>
-                <p class="quan">点击进入社圈</p>         
+                <span class="top-title">话题来自<a class="leade" href="https://weibo.com/210926262">赵丽颖</a></span>
+                <p class="quan">点击了解更多</p>   
+                <!-- <a href="https://weibo.com/210926262">
+                    <img style="width:2rem;height:1.5rem;float:right" clsss="right-jian" src="./meiyougg/right-jian.png" alt="">
+                    <p class="top-right">进入圈子</p>
+                </a>   -->
         </div>
-        
+        <div class="wrap-right">
+            <a href="https://weibo.com/210926262" >
+                <img style="width:2rem;height:2rem;float:right" clsss="right-jian" src="./meiyougg/right-jian.png" alt="">
+                <p class="top-right">进入圈子</p>
+            </a>  
+        </div>
+                
     </div>
     <div class="wrap">
         <div class="share left-share lshare-v62" >
@@ -229,77 +239,8 @@
         </div>
         
     </div>
-    <!-- <script>
-        window.onload = () => {
-            var flag = 0; //标记是拖曳还是点击
-            var oDiv = document.getElementById('suspend-area');
-            var disX,moveX,L,T,starX,starY,starXEnd,starYEnd;
-            oDiv.addEventListener('touchstart',(e) => {
-                flag = 0;
-                e.preventDefault();//阻止触摸时页面的滚动，缩放
-                disX = e.touches[0].clientX - this.offsetLeft;
-                disY = e.touches[0].clientY - this.offsetTop;
-            //手指按下时的坐标
-                starX = e.touches[0].clientX;
-                starY = e.touches[0].clientY;
-            //console.log(disX);
-            });
-            oDiv.addEventListener('touchmove',(e) => {
-                flag = 1;
-                L = e.touches[0].clientX - disX ;
-                T = e.touches[0].clientY - disY ;
-            //移动时 当前位置与起始位置之间的差值
-                starXEnd = e.touches[0].clientX - starX;
-                starYEnd = e.touches[0].clientY - starY;
-            //console.log(L);
-                if(L<0){//限制拖拽的X范围，不能拖出屏幕
-                    L = 0;
-                }else if(L > document.documentElement.clientWidth - this.offsetWidth){
-                    L = document.documentElement.clientWidth - this.offsetWidth;
-                }
-                if(T<0){//限制拖拽的Y范围，不能拖出屏幕
-                    T=0;
-                }else if(T>document.documentElement.clientHeight - this.offsetHeight){
-                    T = document.documentElement.clientHeight - this.offsetHeight;
-                }
-                moveX = L + 'px';
-                moveY = T + 'px';
-            //console.log(moveX);
-            console.log(moveX);
-            console.log(moveY);
-                this.style.left = moveX;
-                this.style.top = moveY;
-            });
-            window.addEventListener('touchend',(e) => {
-            //alert(parseInt(moveX))
-            //判断滑动方向
-                if(flag === 0) {//点击
-                    // window.location.href='http://www.baidu.com';
-                }
-        });
-    }
-    </script> -->
+    
     <div class="scrollsidebar" id="scrollsidebar" >
-            <!-- <div class="side_content">
-              <div class="side_list">
-                <div class="side_title"><a title="隐藏" class="close_btn"><span>关闭</span></a></div>
-                <div class="side_center">
-                  <div class="custom_service">
-                    <p> <a title="点击这里给我发消息" href="###" target="_blank"><img src="http://wpa.qq.com/pa?p=2:8983659:41"></a> </p>
-                  </div>
-                  <div class="other">
-                    <p><img src="./meiyougg/images/qrcode.png" width="120"/></p>
-                    <p>客户服务热线</p>
-                    <p>0755-400-12345</p>
-                  </div>
-                  <div class="msgserver">
-                    <p><a href="###" >联系我们</a></p>
-                  </div>
-                </div>
-                <div class="side_bottom"></div>
-              </div>
-            </div>
-            <div class="show_btn"><span>在线客服</span></div> -->
         <img  class="wechat" src="./meiyougg/pomelo.png" alt="">
     </div>
     <div class="scrollsidebarl" id="scrollsidebarl">
@@ -351,6 +292,7 @@
                 $('.wechat').css('display','block');
                 $('.scrollsidebarl').css('display','none');
             })
+            $('')
         </script>
 </body>
 </html>
