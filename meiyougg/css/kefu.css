@@ -4,9 +4,9 @@ html {overflow-x:hidden;}
 .scrollsidebar{
     position:absolute;
      z-index:999; 
-     top:350px;
+     top: 300px;
      right:0;
-    box-shadow: -6px 7px 10px #a09396;
+    /* box-shadow: -6px 7px 10px #a09396; */
     border-radius: 50%;
     }
 .side_content{width:154px; height:auto; overflow:hidden; float:left; }

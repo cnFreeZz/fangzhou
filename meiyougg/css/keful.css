@@ -4,8 +4,8 @@ html {overflow-x:hidden;}
 .scrollsidebarl{
     position: fixed;; 
     z-index:998; 
-    top:28%;
-    right:0;
+    top:38%;
+    right:1rem;
     display:none;
     box-shadow: -5px 5px 10px #666666;
 }

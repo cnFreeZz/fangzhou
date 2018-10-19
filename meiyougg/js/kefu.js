@@ -12,22 +12,23 @@
         var close_btn = document.querySelector(".close_btn");
         var timer = null;
 
-        //Ðü¸¡QQÔÈËÙÒÆ¶¯
+        //ï¿½ï¿½ï¿½ï¿½QQï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½
         var startMove = function(argument) {
             var scrollsidebar = document.getElementById("scrollsidebar");
             clearInterval(timer);
             timer = setInterval(function() {
                 var speed = (argument - scrollsidebar.offsetTop) / 4;
+                console.log(speed)
                 speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);
                 if (argument == scrollsidebar.offsetTop) {
                     clearInterval(timer);
                 } else {
-                    scrollsidebar.style.top = scrollsidebar.offsetTop + speed + "px";
+                    scrollsidebar.style.top = scrollsidebar.offsetTop + speed + "px" ;
                 }
             }, 20);
         };
 
-        //Êó±êÒÆ¶¯
+        //ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½
         var scrollMove = function() {
             window.onscroll = window.onload = function() {
                 var scrollsidebar = document.getElementById("scrollsidebar");
@@ -42,7 +43,7 @@
             };
         };
 
-        //Ðü¸¡QQÏÔÊ¾
+        //ï¿½ï¿½ï¿½ï¿½QQï¿½ï¿½Ê¾
         var slideShow = function() {
             if (!show_btn) return false;
             show_btn.addEventListener(
@@ -55,7 +56,7 @@
             );
         };
 
-        //Ðü¸¡QQÒþ²Ø
+        //ï¿½ï¿½ï¿½ï¿½QQï¿½ï¿½ï¿½ï¿½
         var slideClose = function() {
             if (!close_btn) return false;
             close_btn.addEventListener(
@@ -69,7 +70,7 @@
             );
         };
 
-        //·µ»Ø³öÀ´µÄ·½·¨
+        //ï¿½ï¿½ï¿½Ø³ï¿½ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½
         return {
             init: function() {
                 scrollMove();
@@ -79,6 +80,6 @@
         };
     })();
 
-    //³õÊ¼»¯
+    //ï¿½ï¿½Ê¼ï¿½ï¿½
     serviceOnline.init();
 })();

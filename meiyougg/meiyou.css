@@ -184,7 +184,7 @@ p{
 .arrow-top {
     display: inline-block;
     width: 20px;
-    height: 20px;
+    height: 30px;
     margin-left: 5px;
     background: url(./jian.png )no-repeat center 3px;
     background-size: 20px;
@@ -303,7 +303,7 @@ li, ol, ul {
 .top-title{
     /* padding: 1rem 0; */
     display: block;
-    
+    font-size: 1.4rem;
 }
 .leade{
     margin-left: 1rem;
@@ -311,15 +311,15 @@ li, ol, ul {
     color:#ff5073;
 }
 .top{
-    height: 4.5rem;
+    height: 4rem;
     width: 100%;
     position: fixed;
     top: 0;
-    background-color:#eee;
-    opacity: 0.8;
+    background-color:#fffafa;
+    /* opacity: 0.8; */
     font-size: 1.8rem;
     margin: 0;
-    border-bottom: 1px solid #ada4a4;
+    border-bottom: 1px solid #ebebeb;
     /* position: relative; */
     
 }
@@ -335,14 +335,14 @@ li, ol, ul {
 }
 .quan{
     color: #999;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     /* padding-top:5px;  */
     display: inline-block;
 }
 .top-right{
     float: right;
     display: inline-block;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     color: #ff5073;
 }
 .top-fix  .right-jian{
@@ -351,5 +351,46 @@ li, ol, ul {
 }
 .wrap-right{
     display: inline-flex;
-    margin-left: 7rem;
+    margin-left: 11rem;
+}
+.reply-time{
+    float: left;
+    height: 3.7rem;
+    line-height: 3.8rem;
+    font-size: 1.4rem;
+    color: #999;
+}
+.reply-time-l{
+    line-height: 2.8rem;
+}
+.bottom-input{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    text-align: center;
+}
+.bottom-input .btn-con{
+    float: right;
+    width: 15.5%;
+    height:2.5rem;
+    /* line-height: 1.5rem; */
+    text-align: center;
+    background-color: #3385ff;
+    border-bottom: 1px solid #2d78f4;
+    outline: medium;
+    color: #fff;
+    letter-spacing: 1px;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
+.input-area{
+    width:83%;
+    height: 2rem;
+    /* outline: none; */
+    /* background: transparent; */
+    /* border: 1px solid ; */
+    text-align: start;
+    border-color: #b8b8b8 transparent #ccc #b8b8b8;
 }
