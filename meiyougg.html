@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./meiyougg/meiyou.css">
     <link rel="stylesheet" type="text/css" href="./meiyougg/css/kefu.css">
     <link rel="stylesheet" href="./meiyougg/css/keful.css">
+    <link href="./meiyougg/css/share.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="./meiyougg/css/style.css"/>
     <title>Document</title>
     <meta name="apple-itunes-app" content="app-id=634896669">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -242,14 +244,27 @@
         
     </div>
     <div class="bottom-input">
+        <!-- 留言 -->
         <span>
             <input type="text" class="input-area" >
         </span>
-        <span>
-        <!-- <button class="btn-con">提交</button> -->
-            <input type="submit" class="btn-con" value="评论">
-        </span>
+        <!-- <span>
+            <input type="submit" class="btn-con" value="提交评论">
+        </span> -->
+        <!-- 点赞收藏 -->
+        <div class="feed" id="feed1">
+                <div class="heart " id="like1" rel="like"></div> 
+                <div class="likeCount" id="likeCount1">26</div>
+        </div>
+
+        <!-- 分享 -->
+        <div class="share-demo">
+                <a href="javascript:void(0)" class="share">
+                    <img  id="share" src="./meiyougg/images/share-ico.png"/>
+                </a>
+        </div>
     </div>
+    <!-- 滑动框 -->
     <div class="scrollsidebar" id="scrollsidebar" >
         <img  class="wechat" src="./meiyougg/mes.png" alt="消息" style="width:5.5rem">
     </div>
@@ -285,10 +300,6 @@
             var setTitle = '';
             var setContents = '';
             var setButton = '';
-            // var owe = document.getElementsByClassName('wechat');
-            // var owel = document.getElementsByClassName('scrollsidebar');
-            // console.log(owe)
-            // console.log(owel)
             $('.wechat').on('click', function(){
                     console.log(112);
                     // setTitle = '提示';
@@ -304,5 +315,46 @@
             })
             $('')
         </script>
+        <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+        <script type="text/javascript" src="./meiyougg/js/share.js"></script>
+        <script  type="text/javascript">
+            $('.share').shareConfig({
+                Shade : true, //是否显示遮罩层
+                Event:'click', //触发事件
+                Content : 'Share', //内容DIV ID
+                Title : '我爱分享' //显示标题
+            });
+        </script>
+        <script>
+                $(document).ready(function()
+                {
+                
+                    $('body').on("click",'.heart',function()
+                    {
+                        
+                        var A=$(this).attr("id");
+                        var B=A.split("like");
+                        var messageID=B[1];
+                        var C=parseInt($("#likeCount"+messageID).html());
+                        $(this).css("background-position","")
+                        var D=$(this).attr("rel");
+                    
+                        if(D === 'like') 
+                        {      
+                            $("#likeCount"+messageID).html(C+1);
+                            $(this).addClass("heartAnimation").attr("rel","unlike");
+                        
+                        }
+                        else
+                        {
+                            $("#likeCount"+messageID).html(C-1);
+                            $(this).removeClass("heartAnimation").attr("rel","like");
+                            $(this).css("background-position","left");
+                        }
+        
+        
+                    });
+                });
+            </script>
 </body>
 </html>

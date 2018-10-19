@@ -15,6 +15,8 @@
         //����QQ�����ƶ�
         var startMove = function(argument) {
             var scrollsidebar = document.getElementById("scrollsidebar");
+            console.log(scrollsidebar.offsetTop);
+            scrollsidebar.offsetTop = '600px';
             clearInterval(timer);
             timer = setInterval(function() {
                 var speed = (argument - scrollsidebar.offsetTop) / 4;
