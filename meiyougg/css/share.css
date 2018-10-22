@@ -70,9 +70,10 @@
 
 
 #share{
-    width: 4rem;
-    height: 3.5rem;
+    width: 4.5rem;
+    height: 4rem;
     float: right;
+    margin-top: 0.2rem;
 }
 /*Share*/
 #Share {

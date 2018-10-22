@@ -9,11 +9,11 @@ body{color: #333333;}
 	    background: url(../images/web_heart_animation.png);
 	    background-position: left;
 	    background-repeat: no-repeat;
-	    height: 4rem;
-	    width: 8rem;
+	    height: 4.8rem;
+	    width: 7rem;
 	    cursor: pointer;
 	    position: absolute;
-	    left:-70px;
+	    left:-60px;
         background-size:2900%;
     }
     .heart:hover, .heart:focus{
@@ -64,6 +64,6 @@ body{color: #333333;}
 		font-family: 'Georgia', Times, Times New Roman, serif;
 		margin-top: 0.8rem;
 		margin-left: -0.5rem;
-		font-size: 25px;
+		font-size: 26px;
 		color: #999999;
 	}

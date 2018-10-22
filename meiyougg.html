@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./meiyougg/meiyou.css">
+    <link rel="stylesheet" href="./meiyougg/css/meiyou.css">
     <link rel="stylesheet" type="text/css" href="./meiyougg/css/kefu.css">
     <link rel="stylesheet" href="./meiyougg/css/keful.css">
     <link href="./meiyougg/css/share.css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" type="text/css" href="./meiyougg/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="./meiyougg/css/style.css"/>
+    <!--字体样式-->
+    <link rel="stylesheet" href="./meiyougg/iconfont/iconfont.css" type="text/css" />
+
+    <!--必要样式-->
+    <link rel="stylesheet" href="./meiyougg/css/index.css" type="text/css" />
+    <link rel="stylesheet" href="./meiyougg/css/animate.css" type="text/css" />
+
     <title>Document</title>
     <meta name="apple-itunes-app" content="app-id=634896669">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -36,7 +43,7 @@
         </div>
         <div class="wrap-right">
             <a href="https://weibo.com/210926262" >
-                <img style="width:2rem;height:1.7rem;float:right" clsss="right-jian" src="./meiyougg/right-jian.png" alt="">
+                <img style="width:2rem;height:1.7rem;float:right" clsss="right-jian" src="./meiyougg/images/right-jian.png" alt="">
                 <p class="top-right">进入圈子</p>
             </a>  
         </div>
@@ -80,7 +87,7 @@
                     </span> -->
                     <span class="praise-text" data-count="39">39</span>
                     <span class="dianzan">
-                        <img class="zan" src="./meiyougg/zanl.png" alt="zan">
+                        <img class="zan" src="./meiyougg/images/zanl.png" alt="zan">
                     </span>
                 </div>
             </section>
@@ -107,7 +114,7 @@
                     <span class="reply-time">10-11</span>                    
                     <span class="praise-text">9</span>
                     <span class="dianzan">
-                            <img class="zan" src="./meiyougg/zanl.png" alt="zan">
+                            <img class="zan" src="./meiyougg/images/zanl.png" alt="zan">
                     </span>
                 </li>
                 <li class="clearfix">
@@ -133,11 +140,11 @@
                             <div class="praise-right">
                                     <span class="praise-text">9</span>
                                     <span class="dianzan dianzan-mes">
-                                            <img class="zan" src="./meiyougg/zanl.png" alt="zan">
+                                            <img class="zan" src="./meiyougg/images/zanl.png" alt="zan">
                                     </span>
                             </div>
                             <span class="stack-num">
-                                    <img class="message" src="./meiyougg/message.png" alt="">
+                                    <img class="message" src="./meiyougg/images/message.png" alt="">
                                     1
                             </span>
                         </div>
@@ -170,7 +177,7 @@
                         <span class="reply-time">10-11</span>                                            
                         <span class="praise-text">18</span>
                         <span class="dianzan">
-                                <img class="zan" src="./meiyougg/zanl.png" alt="zan">
+                                <img class="zan" src="./meiyougg/images/zanl.png" alt="zan">
                         </span>
                     </li>
                 <li class="clearfix">
@@ -192,7 +199,7 @@
                         <span class="reply-time">10-11</span>                                            
                         <span class="praise-text">9</span>
                         <span class="dianzan">
-                                <img class="zan" src="./meiyougg/zanl.png" alt="zan">
+                                <img class="zan" src="./meiyougg/images/zanl.png" alt="zan">
                         </span>
                     </li>
                 <li class="clearfix">
@@ -214,7 +221,7 @@
                         <span class="reply-time">10-11</span>                                            
                         <span class="praise-text">29</span>
                         <span class="dianzan">
-                                <img class="zan" src="./meiyougg/zanl.png" alt="zan">
+                                <img class="zan" src="./meiyougg/images/zanl.png" alt="zan">
                         </span>
                     </li>
                 <li class="clearfix">
@@ -236,7 +243,7 @@
                         <span class="reply-time">10-11</span>                                            
                         <span class="praise-text">39</span>
                         <span class="dianzan">
-                                <img class="zan" src="./meiyougg/zanl.png" alt="zan">
+                                <img class="zan" src="./meiyougg/images/zanl.png" alt="zan">
                         </span>
                     </li>
             </ul> 
@@ -246,16 +253,26 @@
     <div class="bottom-input">
         <!-- 留言 -->
         <span>
-            <input type="text" class="input-area" >
+            <input type="text" class="input-area" placeholder="@楼主 :">
         </span>
         <!-- <span>
             <input type="submit" class="btn-con" value="提交评论">
         </span> -->
+        
+        <div class="opera">
+            <span id="btn">
+                <i class="iconfont">&#xe602;</i>
+            </span>
+        </div>
+        
+        
         <!-- 点赞收藏 -->
         <div class="feed" id="feed1">
                 <div class="heart " id="like1" rel="like"></div> 
                 <div class="likeCount" id="likeCount1">26</div>
         </div>
+
+
 
         <!-- 分享 -->
         <div class="share-demo">
@@ -266,7 +283,7 @@
     </div>
     <!-- 滑动框 -->
     <div class="scrollsidebar" id="scrollsidebar" >
-        <img  class="wechat" src="./meiyougg/mes.png" alt="消息" style="width:5.5rem">
+        <img  class="wechat" src="./meiyougg/images/mes.png" alt="消息" style="width:5.5rem">
     </div>
     <div class="scrollsidebarl" id="scrollsidebarl">
         <!-- <img src="./meiyougg/message.png" alt=""> -->
@@ -275,7 +292,7 @@
                 <div class="side_title"><a title="隐藏" class="close_btn"><span>关闭</span></a></div>
                 <div class="side_center">
                   <div class="custom_service">
-                    <p> <a title="点击这里给我发消息" href="weixin:///" target="_blank"><img src="./meiyougg/wechat.png"></a> </p>
+                    <p> <a title="点击这里给我发消息" href="weixin:///" target="_blank"><img src="./meiyougg/images/wechat.png"></a> </p>
                   </div>
                   <div class="other">
                     <p><img src="./meiyougg/images/qrcode.png" width="120"/></p>
@@ -317,6 +334,7 @@
         </script>
         <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
         <script type="text/javascript" src="./meiyougg/js/share.js"></script>
+        <!-- 分享 -->
         <script  type="text/javascript">
             $('.share').shareConfig({
                 Shade : true, //是否显示遮罩层
@@ -325,6 +343,7 @@
                 Title : '我爱分享' //显示标题
             });
         </script>
+        <!-- 收藏 -->
         <script>
                 $(document).ready(function()
                 {
@@ -355,6 +374,69 @@
         
                     });
                 });
-            </script>
+        </script>
+        <!-- 点赞 -->
+        <script type="text/javascript">
+            (function ($) {
+                $.extend({
+                    tipsBox: function (options) {
+                        options = $.extend({
+                            obj: null,  //jq对象，要在那个html标签上显示
+                            str: "+1",  //字符串，要显示的内容;也可以传一段html，如: "<b style='font-family:Microsoft YaHei;'>+1</b>"
+                            startSize: "12px",  //动画开始的文字大小
+                            endSize: "30px",    //动画结束的文字大小
+                            interval: 600,  //动画时间间隔
+                            color: "red",    //文字颜色
+                            callback: function () { }    //回调函数
+                        }, options);
+                        $("body").append("<span class='num'>" + options.str + "</span>");
+                        var box = $(".num");
+                        var left = options.obj.offset().left + options.obj.width() / 2;
+                        var top = options.obj.offset().top - options.obj.height();
+                        box.css({
+                            "position": "absolute",
+                            "left": left + "px",
+                            "top": top + "px",
+                            "z-index": 9999,
+                            "font-size": options.startSize,
+                            "line-height": options.endSize,
+                            "color": options.color
+                        });
+                        box.animate({
+                            "font-size": options.endSize,
+                            "opacity": "0",
+                            "top": top - parseInt(options.endSize) + "px"
+                        }, options.interval, function () {
+                            box.remove();
+                            options.callback();
+                        });
+                    }
+                });
+            })(jQuery);
+              
+            function niceIn(prop){
+                prop.find('i').addClass('niceIn');
+                setTimeout(function(){
+                    prop.find('i').removeClass('niceIn');	
+                },1000);		
+            }
+            $(function () {
+                $("#btn").click(function () {
+                    $.tipsBox({
+                        obj: $(this),
+                        str: "+1",
+                        callback: function () {
+                        }
+                    });
+                    niceIn($(this));
+                });
+            });
+            $(function() {
+                $('#btn').click(() => {
+                    console.log(1234);
+                    $('.iconfont').css('color','red');
+                })
+            })
+        </script>
 </body>
 </html>
