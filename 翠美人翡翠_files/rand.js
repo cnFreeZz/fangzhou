@@ -1,9 +1,5 @@
 var randnum = [
-	'fav369',
-	'fav106',
-	'fav655',
-	'fav677',
-	'fav881',
+'aguo622'
 ]
-var rand = Math.floor(Math.random()*5);
+var rand = Math.floor(Math.random());
 
