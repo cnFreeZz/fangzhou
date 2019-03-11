@@ -1,0 +1,159 @@
+﻿﻿
+.app-bar {
+    display: none;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background: rgba(0, 0, 0, .8);
+    color: #FFF;
+    z-index: 10001;
+    font-size: 12px;
+    font-family: "Microsoft Yahei";
+	overflow:hidden;
+}
+.app-bar .app-logo {
+    float: left;
+    width: 39px;
+    height: 29px;
+    padding: 15px 0 0 5px;
+}
+.app-bar .app-txt {
+    float: left;
+	width:200px;
+    padding: 9px 0 0 8px;
+    line-height: 16px;
+}
+.app-btn {
+    float: right;
+    background-color: #4998E7;
+    border-radius: 3px;
+    color: #FFF;
+    margin-top: 15px;
+    margin-right: 14px;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 7px;
+    padding-right: 5px;
+    padding-bottom: 8px;
+    padding-left: 5px;
+	height: 31px;
+}
+.app-btn a {
+    color: #FFF;
+}
+.app-bar .app-txt h2 {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.main_content {width:98%;max-width:700px;margin:0 auto;background:#fff;}
+
+.fade {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 0;
+	
+}
+.fade.in {
+    opacity: 1;
+    -webkit-transition: opacity .15s linear;
+    -o-transition: opacity .15s linear;
+    transition: opacity .15s linear;
+	
+	
+}
+
+.fade .modal-sm {
+    -webkit-transform: translate(0, -10%);
+    -ms-transform: translate(0, -10%);
+    -o-transform: translate(0, -10%);
+    transform: translate(0, -10%);
+}
+.fade.in .modal-sm{
+    -webkit-transition: -webkit-transform .3s ease-out;
+    -o-transition: -o-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    -webkit-transform: translate(0, 0%);
+    -ms-transform: translate(0, 0%);
+    -o-transform: translate(0, 0%);
+    transform: translate(0, 0%);
+}
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+	background: rgba(0,0,0,.3);
+}
+.modal h4{
+ font-size: 0.8em;
+}
+.bs-example-modal-sm {
+    width: 100%;
+	line-height: 45px;
+	font-family: '黑体';
+	font-size: 1.6em;
+	border-bottom: 2px #ddd solid;
+	margin-bottom: 20px;
+	text-align: center;
+	display:none;
+}
+.modal-sm {
+    width: 300px;
+}
+.modal-dialog {
+    margin: 30px auto;
+	
+}
+.modal-header {
+    min-height: 16.43px;
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 6px;
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+}
+.modal-body {
+    position: relative;
+    padding: 15px;
+}
+@keyframes big{0%{transform:scale(1);}18%{transform:scale(1.1);}32%{transform:scale(1);}48%{transform:scale(1.1);}64%{transform:scale(1);}80%{transform:scale(1.1);}100%{transform:scale(1);}}@-webkit-keyframes big{0%{-webkit-transform:scale(1);}18%{-webkit-transform:scale(1.1);}32%{-webkit-transform:scale(1);}48%{-webkit-transform:scale(1.1);}64%{-webkit-transform:scale(1);}80%{-webkit-transform:scale(1.1);}100%{-webkit-transform:scale(1);}}@-moz-keyframes big{0%{-moz-transform:scale(1);}18%{-moz-transform:scale(1.1);}32%{-moz-transform:scale(1);}48%{-moz-transform:scale(1.1);}64%{-moz-transform:scale(1);}80%{-moz-transform:scale(1.1);}100%{-moz-transform:scale(1);}}@-o-keyframes big{0%{-o-transform:scale(1);}18%{-o-transform:scale(1.1);}32%{-o-transform:scale(1);}48%{-o-transform:scale(1.1);}64%{-o-transform:scale(1);}80%{-o-transform:scale(1.1);}100%{-o-transform:scale(1);}}@-ms-keyframes big{0%{-ms-transform:scale(1);}18%{-ms-transform:scale(1.1);}32%{-ms-transform:scale(1);}48%{-ms-transform:scale(1.1);}64%{-ms-transform:scale(1);}80%{-ms-transform:scale(1.1);}100%{-ms-transform:scale(1);}}
+.blink{
+    display: block;
+    margin: 0 auto;
+    animation: big 1.4s ease infinite alternate;
+    -webkit-animation: big 1.4s ease infinite alternate;
+    -moz-animation: big 1.4s ease infinite alternate;
+    -ms-animation: big 1.4s ease infinite alternate;
+    -o-animation: big 1.4s ease infinite alternate;
+}
+.bottom_btn {
+    width: 25%;
+    position: absolute;
+    right: 1rem;
+    top: 10%;
+    animation: big 1.4s ease infinite alternate;
+    -webkit-animation: big 1.4s ease infinite alternate;
+    -moz-animation: big 1.4s ease infinite alternate;
+    -ms-animation: big 1.4s ease infinite alternate;
+    -o-animation: big 1.4s ease infinite alternate;
+}
